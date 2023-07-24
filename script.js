@@ -5,7 +5,7 @@ request.onload = ()=> {
     console.log(request.statusText);
     let result=JSON.parse(request.response);
     for (let n of result)
-    console.log("Name:",n.name + " ," + "Region:",n.region + " ," + "Sub-Region:",n.subregion + " ," + "Population:",n.population);
+    console.log(n.flags.png);
 }
 request.onerror = (er)=> {
     console.log(er);
